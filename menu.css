@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins',sans-serif;
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(./imagesofproj/bgbanatay.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    font-family: 'poppins' sans-serif;
+  }
+ 
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FFFF00;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+ 
+   h1 {
+    font-size: 50px;
+    word-break: break-all;
+    color: #fff;
+  }
+
+  h4{
+    font-size: 30px;
+    color: #fff;
+  }
+
+  p{
+    font-size: 20px;
+    color: black;
+  }
+
+  .row {
+    margin: 15px -30px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 15px;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  h1:hover {
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius:  20%;
+  }
+
+h4:hover {
+  color: #fff;
+  transition: .5s;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius:  20%;
+}
+
+.column:hover {
+  color: black;
+  transition: .5s;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius:  20%;
+}
+  

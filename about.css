@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.section{
+	
+ 
+    width: 100%;
+    background-size: cover;
+    align-items:center;
+    display:flex;
+    height:100vh ;
+    background-position: center;
+	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./imagesofproj/about.jpg);
+	opacity:0.9;
+	background-repeat: no-repeat;
+	
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.container{
+	width:80%;
+	display:block;
+	margin:auto;
+	padding-top:100px;
+}
+
+.content-section{
+    float:left;
+	width:55%;
+
+}
+
+.image-section{
+    float:right;
+    width:45%;
+}
+
+.image-section img{
+    width:100%;
+    height:auto;
+}
+
+.content-section.title{
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #fff;
+}
+
+.content-section .content h3{
+	
+	color:rgb(198, 51, 29);
+	font-size:25x;
+}
+
+.content-section .content p{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 21px;
+	line-height: 1.5;
+}
+
+.content-section .content .buton{
+	margin-top: 30px;
+}
+
+.content-section .content .buton a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color: rgb(206, 247, 21);
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+
+.content-section .content .buton a:hover{
+	background-color: rgb(7, 6, 6);
+	color: rgb(223, 246, 16);
+}
+
+.content-section .social{
+	margin-top: 40px;
+}
+
+.content-section .social i{
+    color: rgb(214, 58, 58);
+    font-size:30px;
+	padding:0px 10px;
+}
+
+.content-section .social i:hover{
+    color:#9d1616;
+}
+
+@media screen and (max-width:768px){
+	.container{
+		width:80%;
+		display:block;
+		margin:auto;
+		padding-top:50px;
+	}
+	.content-section{
+		float:none;
+		width:100%;
+		display:block;
+		margin:auto
+	
+	}
+	.image-section{
+		float:none;
+		width:100%;
+		
+	}
+	.image-section img{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+	.content-section .title{
+		text-align: center;
+		font-size: 19px;
+	}
+	.content-section .content .buton{
+		text-align: center;
+	}
+	.content-section.content.buton a{
+		padding: 9px 30px;
+	}
+	.content-section .social{
+		text-align: center;
+	}
+}
+
+h1{
+	color: #fff;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 50px;
+}
+
+pre{
+	color: orange;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 30px;
+}

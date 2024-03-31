@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations  | Food Affairs</title>
+<link rel="stylesheet" href="booking.css">
+    
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="./imagesofproj/bglogo.png" class="logo" height="130px" width="100px">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Event.html">Events</a></li>
+                <li><a href="Menu.html">Packages</a></li>
+                <li><a href="Booking.html">Reservations</a></li>
+                <li><a href="Registration.html">Registrations</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </div>
+    <section>
+<center>
+<div class="container">
+    
+<div  class="title"> <img src="./imagesofproj/bglogo.png" height="75px" width="100px">Booking | Food Affairs</div><hr><br>
+
+<form action="booking.php" method="post">
+    
+    
+<div class="user-details">
+<div class="input-box">
+       
+    <span class="details"><b></span></b></span>
+    <input type="name" name="name" id="name" placeholder="Enter Your First Name" required> <br>
+    </div>
+    <div class="input-box">
+            <span class="details"><b></b></span>
+            <input type="lname" name="lname" id="lname" placeholder=" Enter your  Last Name"required ><br>
+            </div>
+
+<span class="details"><b></span></b></span>
+<div class="input-box">
+        <span class="details"><b></b></span>
+        <input type="date" name="date" id="date" value="2022/01/03" required ><br>
+        </div>
+<div class="input-box">
+        <span class="details"><b></b></span>
+        <input type="time" name="time" id="time" value="07:06" ><br>
+        </div>
+        <div class="input-box">
+            <span class="details"><b></b></span>
+            <textarea type="address" name="address" id="address" rows="2"   required="" placeholder=" Enter the Address" style="width: 399px; height: 74px;" ></textarea><br>
+            </div>
+            <div class="input-box">
+                <span class="details"><b></b></span>
+                <textarea type="note" name="note" id="address" rows="2"   required="" placeholder=" Enter the Note" style="width: 399px; height: 74px;" ></textarea><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="tableType"><b>Event</b></label>
+                    <select type="Event" id="Event" name="Event" required> 
+                    <option selected disabled>Choose</option>
+                    <option value="Weddings">Weddings</option>
+                    <option value="Corporate">Corporate</option>
+                    <option value="Parties">Parties</option>
+                    </select>
+                    </div>
+                <div class="input-box">
+                        <label for="placement"><b>Placement</b></label>     
+                        <select name="Placement" id="Placement" required>
+                        <option selected disabled>Choose</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="indoor">Indoor</option>
+                        <option value="rooftop">rooftop</option>
+                        </select>
+                    </div>
+                <div class="input-box">
+                            <label for="packages">Packages</label>&nbsp;                            
+                            <select name="Packages" id="Packages" required>
+                            <option selected disabled>Choose</option>
+                            <option value="outdoor">Deal-1</option>
+                            <option value="indoor">Deal-2</option>
+                            <option value="rooftop">Deal-3</option>
+                            </select>
+                    </div>        
+    </div>
+
+    <div class="reset">
+        <input type="reset" value=" RESET ">
+        </div>
+
+    <div class="button">
+    <input type="submit" value=" BOOK ">
+    </div>
+    </center>   
+</form>
+</section>
+
+<script>
+    <input name="number"
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number"
+    maxlength = "6"
+ />
+</script>
+</body>
+
+</div>
+
+</html>
+    
+
+

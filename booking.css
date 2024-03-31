@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    color:#F9AC66;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./imagesofproj/caterers.jpg);
+    height:100vh ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.container{
+    max-width: 900px;
+    width:150%;
+    min-height: auto;
+    background-color:#165954;opacity:0.8;
+    padding: 25px 30px;
+    border-radius: 25px;
+    
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position:relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+    display: inline-block;
+    
+}
+.container .title::before{
+    content:'';
+    position: relative;
+    left:0;
+    bottom:0;
+    width:100%;
+    background:linear-gradient(135deg,#71b7e6, #9b5b);
+    }
+    .container form .user-details{
+        margin: top 25px; ;
+        display:flex;
+        flex-wrap:wrap;
+        
+        justify-content: space-between;
+    }
+    
+    form .user-details .input-box{
+        
+        width:calc(100% /2 - 20px);
+        margin-bottom:15px;
+    }
+     
+    .user-details .input-box .details{
+        
+        display:block;
+        font-weight: 500;
+        margin-bottom: 5px;
+        
+    }
+    .user-details .input-box input{
+   
+        height: 30px;
+        width:100%;
+        outline:none;
+        border-radius:5px;
+        border:1px solid #fff;
+        padding-left:15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition:all 0.3s ease;
+        
+    }
+    .user-details .input-box input:focus,
+
+    .user-details .input-box input:valid{
+    border-color: #9b59b6;
+    }
+    form.reset{
+        text-align: left;
+    }
+    form .reset input{
+        padding: 20px 0;
+        margin-top: 10px;
+        width:100%;
+        outline:none;
+        color: #000;
+        border:#05073a;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background:linear-gradient(135deg,#F9Ac66, #ED6B5B);
+    }
+    form.reset input:hover{
+        background:linear-gradient(135deg,#F9Ac66, #ED6B5B);
+
+    }
+    form.button{
+        text-align: center;
+    }
+    form .button input{
+        padding: 20px 0;
+        margin-top: 10px;
+        
+        width:100%;
+        outline:none;
+        color: #000;
+        border:#05073a;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background:linear-gradient(135deg,#F9Ac66, #ED6B5B);
+    }
+    form.button input:hover{
+        background:linear-gradient(135deg,#F9Ac66, #ED6B5B);
+
+    }
+    @media(max-width:584px){
+        .container{
+        max-width:100%;
+        }
+
+    form .user-details .input-box{
+        margin-bottom:15px;
+        width:100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width:0;
+    }
+
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./imagesofproj/banbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FFFF00;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+} 
+.content h3{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #D53518 ;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #D53518 ;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover span{
+    width: 100%;
+    transition: 0.5s;
+
+}
+button:hover{
+    border: none;
+}
+
+
+
